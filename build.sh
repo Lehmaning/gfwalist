@@ -3,7 +3,7 @@ wget https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -O ./g
 cat gfwlist.tmp | base64 -d > gfwalist.tmp
 sed -i "1,17d" gfwalist.tmp
 
-desc="! [Auto Proxy]\n! Expires: 7d\n! Title: GFWList4LL\n! HomePage: https://github.com/Lehmaning/gfwalist\n"
+desc="! [Auto Proxy 2.93]\n! Expires: 7d\n! Title: GFWList4LL\n! HomePage: https://github.com/Lehmaning/gfwalist\n"
 wget https://github.com/Loyalsoldier/cn-blocked-domain/raw/release/domains.txt -O ./cn-blocked-domain.tmp
 sed -i "s/^[a-zA-Z0-9]*\.//g" cn-blocked-domain.tmp
 sed -i -e  "s/^google.*\..*//g" -e "s/^/||/g" cn-blocked-domain.tmp
