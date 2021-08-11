@@ -14,5 +14,4 @@ sed -i "s/\^$//g" anti-ad.tmp
 awk -F '\t' '{if(FNR==NR){if($0!~"^#"){s[$1"_"$2"_"$4"_"$5]++}}else{if($0~"^#"||s[$1"_"$2"_"$4"_"$5]==0){print$0}}}' anti-ad.tmp gfwalist.tmp > gfwalist-1.tmp
 awk '!x[$0]++' gfwalist-1.tmp > gfwalist-d.txt
 sed -i -e "s/.*analy[sis|tics]\.*//g" -e "1i$desc" gfwalist-d.txt
-base64 gfwalist-d.txt > gfwalist.txt
 rm *.tmp
