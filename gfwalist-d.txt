@@ -1,7 +1,8 @@
-! [Auto Proxy 2.93]
-! Expires: 7d
+[Auto Proxy 0.2.9]
+! Expires: 7 days
 ! Title: GFWList4LL
 ! HomePage: https://github.com/Lehmaning/gfwalist
+! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
 
 !---------403/451/503/520 & URL Redirects---------
 !--ehentai
