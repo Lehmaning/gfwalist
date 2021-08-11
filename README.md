@@ -8,4 +8,6 @@
 在 auto switch 配置中加入该规则列表：https://raw.githubusercontent.com/Lehmaning/gfwalist/main/gfwalist.txt
 
 ### 本地生成
+```shell
 bash <(curl -s https://raw.githubusercontent.com/Lehmaning/gfwalist/main/build.sh)
+```
