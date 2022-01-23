@@ -15,5 +15,5 @@ awk -F '\t' '{if(FNR==NR){if($0!~"^#"){s[$1"_"$2"_"$4"_"$5]++}}else{if($0~"^#"||
 awk '!x[$0]++' gfwalist.tmp > gfwalist-d.txt
 sed -i -e "s/.*analy[sis|tics]\.*//g" -e "1i$desc" gfwalist-d.txt
 
-cat extra.txt | sed "s/^/||/g" >> gfwalist-d.txt
+cat extra.txt | sed "s/^/||/g" >> gfwalist.txt
 rm *.tmp
